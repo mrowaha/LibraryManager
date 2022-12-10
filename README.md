@@ -1,4 +1,11 @@
 # LibraryManager
+______________________
+
+## LibraryManager Database Setup
+__________________________________
+Go to /LibraryManager/LibraryManager.api/api/src/main/resources/application.properties
+
+Update postgresql username and password
 
 ## LibraryManager API Endpoints
 ____________________________________
@@ -103,9 +110,11 @@ http://localhost:8080/api/book/1
 ```
 The api supports creation of user and issuing of books but the frontend has not yet implemented those endpoints
 these endpoints include
+```
 POST new user
 GET user by email and password
 PUT issue book to user
 GET books issued to user
 GET unissue book
 DELETE user
+```
