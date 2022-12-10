@@ -1,0 +1,40 @@
+.search_bar {
+    width : fit-content;
+    height : fit-content;
+    position : relative;
+    top : 15px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search_form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.25rem;
+
+}
+
+.form_control {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.25rem;
+}
+
+.actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: #77002e;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #77002e;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #a50e48;
+    border-color: #a50e48;
+  }

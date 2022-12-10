@@ -1,0 +1,10 @@
+.header_bar {
+    display: flex;
+    width : 100%;
+    justify-content: space-between;
+}
+
+.warning_message {
+    font-style: bold;
+    color : #77002e;
+}
