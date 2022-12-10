@@ -6,7 +6,8 @@ const BooksContext = createContext({
     books : [],
     loading : true,
     setByName : (byNameArr) => {},
-    setByGenre : (byGenreArr) => {}
+    setByGenre : (byGenreArr) => {},
+    getBookAuthor : (authorId) => {}
 });
 
 export function BooksContextProvider(props) {
@@ -37,12 +38,19 @@ export function BooksContextProvider(props) {
         setBooks(byGenreArr);
     }
     
+    const getBookAuthor = (authorId) => {
+        let booksOfAuthor = books?.filter(book => book.author.id === authorId);
+        let author = booksOfAuthor[0].author;
+        return author;
+    }
+    
     const context = {
         type : 'book',
         books : books,
         loading : loading,
         setByName : setByName,
-        setByGenre : setByGenre
+        setByGenre : setByGenre,
+        getBookAuthor : getBookAuthor
     }; 
     
     return (
